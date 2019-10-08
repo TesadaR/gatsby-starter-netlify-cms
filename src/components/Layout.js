@@ -1,13 +1,31 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+
+import PropTypes from "prop-types"
+
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import './all.sass'
+// import './all.sass'
+import './Layout.css'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
+
+
+
+  if ("default" === "default") {
+    document.body.classList.remove("body__dark_theme")
+    document.body.classList.add("body__default_theme")
+  } else {
+    document.body.classList.remove("body__default_theme")
+    document.body.classList.add("body__dark_theme")
+  }
+
+  // children.className = "Main__Container"
+
+
   return (
     <div>
       <Helmet>
@@ -45,9 +63,13 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
       </Helmet>
-      <Navbar />
-      <div>{children}</div>
-      <Footer />
+      <div className={"App__Container"}>
+        <Navbar />
+        <div className={"Main__Container"}>
+          {children}
+        </div>
+        <Footer />
+      </div>
     </div>
   )
 }

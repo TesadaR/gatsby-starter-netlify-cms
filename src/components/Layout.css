@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+    color: #4F5D75;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    /* background-color: #141A24; */
+    background-color: #222;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.App__Container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100%;
+    margin: 0px auto;
+    /*     background-color: #BDBDBD; */
+    animation: grow 5s infinite;
+}
+
+.Configure {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Main__Container {
+    /* height: 300px; */
+    margin-top: 3rem;
+    margin-left: 28rem;
+    margin-right: 13rem;
+    width: 100%;
+}

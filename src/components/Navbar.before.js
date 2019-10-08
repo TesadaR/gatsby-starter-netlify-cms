@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
-import './Navbar.css'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -35,28 +34,7 @@ const Navbar = class extends React.Component {
 
   render(){
     return (
-      <div className={"Nav__Container"}>
-        <div class="Nav__Fixed">
-          <h1 style={{"color":"white"}}>N2</h1>
-          <span>bg</span>
-          <div class="info" style={{
-            // "backgroundColor":"black", 
-            width:"100%", 
-            paddingLeft:"5rem"}
-          } >
-            <p style={{"color":"white"}}>N3</p>
-            <p>-</p>
-            <p>first</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p>
-            
-            <p>last</p>
-          </div>
-          <div class="Configure">
-            <span>Setting</span>
-          </div>
-        </div>
-      </div>
-
-      
+      <div></div>
     )
   }
 

@@ -99,6 +99,7 @@ export const IndexPageTemplate = ({
                     Latest stories
                   </h3>
                   <BlogRoll />
+                  <p>is BlogROll?</p>
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Read more
